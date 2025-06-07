@@ -1,0 +1,4 @@
+SELECT E.fname, E.lname
+FROM EMPLOYEE AS E
+LEFT JOIN WORKS_ON AS W ON E.ssn = W.essn
+WHERE W.pno IS NULL;
