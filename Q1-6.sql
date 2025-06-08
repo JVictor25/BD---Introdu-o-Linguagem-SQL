@@ -7,5 +7,4 @@ WHERE
     AND E.dno NOT IN (
         SELECT DL.dnumber
         FROM DEPT_LOCATIONS AS DL
-        WHERE DL.dlocation = 'Houston'
-    );
+        WHERE DL.dlocation = 'Houston');
