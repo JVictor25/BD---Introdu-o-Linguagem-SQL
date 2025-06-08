@@ -1,0 +1,5 @@
+SELECT E.fname,E.init,E.lname
+FROM EMPLOYEE AS E
+JOIN DEPARTMENT AS D ON E.ssn = D.mgr_ssn
+LEFT JOIN DEPENDENT AS DEP ON E.ssn = DEP.essn
+WHERE DEP.essn IS NULL; 
